@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Add/class</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tugas P06 JQuery Add/Remove Class for SPA Menu</h1>	
+
+	<button class="tombol" id="tambah">Tambahkan class</button>
+	<button class="tombol" id="hapus">Hapus class</button>
+
+	<div class="lingkaran"></div>
+	<p class="pesan"></p>
+</body>
+<script>
+    $(document).ready(function(){
+		$('#tambah').click(function(){
+			$('.lingkaran').addClass('biru');
+			$('.pesan').text('ini bentuk lingkaran');
+		});	
+
+		$('#hapus').click(function(){
+			$('.lingkaran').removeClass('biru');
+			$('.pesan').text('ini bentuk kotak');
+		});	
+	});
+</script>
+</html>
